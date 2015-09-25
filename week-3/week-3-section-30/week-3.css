@@ -1,0 +1,51 @@
+/* Universal selector */
+* {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+/* class selectors are preceded by dot */
+.specific-ones {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+
+/* pseudo classes */
+a:hover {
+    background-color: blue;
+}
+a:visited {
+    background-color: #CCC;
+    color: black;
+}
+a:active {
+    background-color: red;
+}
+
+
+/* pseudo elements */
+/*
+li::before {
+    content: "testing before ";
+    color: brown;
+}
+
+li::after {
+    content: "testing after ";
+    color: cornflowerblue;
+} */
+
+
+/* Change layout based on the screen width */
+@media (min-width: 700px) {
+    li {
+        display: inline;
+    }
+}
