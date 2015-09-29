@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Margin, Padding and Border</title>
+        <style type="text/css">
+            #first {
+                /* Targeting specific borders */
+                border-top: 1px solid red; /* thickness | type | color */
+                border-right: 2px solid blue;
+                border-bottom: 4px solid green;
+                border-left: 6px solid black;
+                
+                /* Targeting specific padding with 4 values */
+                padding: 20px 40px 60px 80px; /* top | right | bottom | left */
+                
+                /* Targeting specific padding with 3 values */
+                padding: 20px 100px 60px; /* top | right-&-left | bottom */
+                
+                /* Targeting specific padding with 2 values */
+                padding: 20px 100px; /* top-&-bottom | right-&-left */
+                
+                /* Targeting specific padding with 1 value */
+                padding: 100px; /* top-&-right-&-bottom-&-left */
+            }
+            
+            #second {
+                /* Targeting all borders */
+                border: 4px solid red; /* thickness | type | color */
+                
+                /* Targeting specific padding with 1 value */
+                padding: 100px;
+                
+                /* Targeting specific margin with 4 values */
+                margin: 20px 40px 60px 80px; /* top | right | bottom | left */
+                
+                /* Targeting specific margin with 3 values */
+                margin: 20px 100px 60px; /* top | right-&-left | bottom */
+                
+                /* Targeting specific margin with 2 values */
+                margin: 20px 100px; /* top-&-bottom | right-&-left */
+                
+                /* Targeting specific margin with 1 value */
+                margin: 100px; /* top-&-right-&-bottom-&-left */  
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p id="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p id="second">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </body>
+</html>
