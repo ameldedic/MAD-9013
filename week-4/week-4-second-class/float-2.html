@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4, Class 2</title>
+        <style type="text/css">
+            /* -- Defaults -- */
+            * {
+              padding:0;
+              margin:0;
+              box-sizing: border-box;
+            }
+            html, body {
+              font-size: 16px;
+            }
+            body {
+              line-height: 1.75;
+            }
+            .wrapper {
+              max-width: 800px;
+              padding: 0 2%;
+              margin: 0 auto; /* centered on page */
+            }
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            h2 {
+              margin-bottom: 1rem;
+              font-size: 1.8rem;
+            }
+            p {
+              font-family: georgia;
+              font-size: 1.0rem;
+            }
+
+            /* -- header -- */
+            .banner {
+              background-color: #333;
+              background-image: url("http://lorempixel.com/1920/344/");
+              background-position: 50% 50%;
+              text-transform: uppercase;
+              text-align:center;
+              color: #fff;
+              padding: 9rem 0; 
+              /*
+              Default font-size: 1.0rem = 16px
+              [(9.0 * 16px) = 144px] 144px padding on all four sides
+              + [(1.75 * 2rem) = 56px] 56px line-height for the title
+              = 144px + 144px + 56px
+              minimum required height for the image is 344px
+              Try changing the size of the loaded bg image.
+              */
+            }
+            h1 {
+              line-height: 1.75;
+              font-size: 2rem;
+            }
+
+            /* -- Grid -- */
+            .col-container {
+              margin: 3rem 0;
+              outline: 2px solid blue; /* just to visualize */
+            }
+            .col-2 {
+              margin: 3rem 0;
+              outline: 2px solid red; /* just to visualize */
+              float: left;
+              margin: 0 0 0 6%; /* -- 47 + 47 = 94% -- */  
+              width: 47%;
+            }
+            .col-2:first-child {
+              margin-left: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header class="banner">
+          <h1>Websites Are Cool</h1>
+          <!-- this way it fills the width of the screen.
+            To have it constrained, put it INSIDE the wrapper -->
+        </header>
+
+        <div class="wrapper">
+          <section class="col-container clearfix">
+            <h2>Voluptatem accusantium</h2>
+            <div class="col-2">
+              <article class="sub-article">
+                <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h2>
+                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              </article>
+            </div>
+              
+            <div class="col-2">
+              <article class="sub-article">
+                <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h2>
+                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <img src="http://lorempixel.com/400/200/" alt="nature">
+              </article>   
+            </div>
+          </section>
+        </div>
+    </body>
+</html>
